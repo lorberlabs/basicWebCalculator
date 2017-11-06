@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <a href="/">Domov</a>
+    <a href="/Kalkulator">Kalkulator</a>
+
+    <h1>Pozdravljeni v moj kalkulator</h1>
+    <form action="/Kalkulator" method="post">
+      Prva število: <input type="number" name="prva" /><br />
+      <select name="operacija">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select> <br />
+      Drugo število: <input type="number" name="druga" /><br />
+      <button type="submit">Izračunaj</button>
+      <br />
+      {{rezultat}}
+    </form>
+  </body>
+</html>
